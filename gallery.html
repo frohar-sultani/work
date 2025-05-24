@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Gallery | Cultural Cities of Afghanistan</title>
+    <style>
+   
+        html, body {
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+    
+
+    /* Intro Section */
+    #intro {
+        text-align: center;
+        padding: 30px;
+        background-color: #4F6F52  ;
+        color: white;
+        animation: fadeIn 2s ease-in;
+    }
+
+
+    .mazar, .Herat, .kandahar, .Kunar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 40px 20px;
+        background-color: white;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        max-width: 1200px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .mazar:hover, .Herat:hover, .kandahar:hover, .Kunar:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+        text-align: center;
+        color: #4F6F52;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        grid-column: 1 / -1;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    footer {
+  border-top: 3px solid #4F6F52;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #4F6F52;
+  margin-top: 40px;
+
+}
+    a{
+
+        text-decoration: none;
+        color:#ffff ;
+    }
+        
+        
+    </style>
+
+</head>
+<body>
+    <!--introduction section-->
+    <section id="intro"> 
+        <h3> Afghan cities are full of unique cultural stories, traditions, and flavors.<br>
+            Explore them here!
+        </h3>
+        </section>
+        <div class="mazar">
+            <h1> Mazar-i-sharif </h1>
+            <img src="mazar1.jpeg" height="200px" width="200px" alt="">
+            <img src="mazardress.jpg" height="200px" width="200px"alt="">
+            <img src="qabli.jpg" width="200px" height="200px" alt="">
+            <img src="our live.jpg" width="200px" height="200px" alt="">
+            <img src="Mazar.jpeg" height="200px" width="200px"alt="">
+            
+            <p>
+Mazar-i-Sharif is a major city in northern Afghanistan and the capital of Balkh Province. It is famous for the Blue Mosque, an important religious site attracting pilgrims from across Central Asia. 
+The city is ethnically diverse, with Tajiks, Uzbeks, Hazaras, and Pashtuns living together. 
+The culture reflects this blend, with traditional music, dance, and festivals such as Nowruz (Persian New Year) widely celebrated. Typical foods include kabuli pulao (a rice dish with meat and raisins), mantoo (steamed dumplings), and fresh bread.
+ Men often wear perahan tunban (a traditional long shirt and trousers), while women wear colorful dresses with embroidered scarves and jewelry. 
+</p> </div>
+        <div class="Herat">
+            <h1> Herat </h1>
+            <img src="Herat1.jpeg" height="200px" width="200px" alt="">
+            <img src="Herat_ Afghanistan.jpeg" width="200px" height="200px" alt="">
+            <img src="Herat2.jpeg" height="200px" width="200px"alt="">
+            <img src="heratdress.jpg" height="200px" width="200px"alt="">
+            <img src="bolani.jpg" height="200px" width="200px"alt="">
+            
+            <p> Herat, located in western Afghanistan near Iran and Turkmenistan, has a rich Persian cultural heritage. It is famous for its art, poetry, and historic architecture like the Herat Citadel.
+The people are mainly Tajiks and speak Dari (a Persian dialect). 
+Herati culture includes beautiful traditional music and storytelling.
+Popular foods include shorwa (a meat and vegetable soup),
+bolani (stuffed flatbread), and fresh fruits like pomegranates and melons.
+ Traditional dress includes elegant embroidered dresses for women, often paired with silk scarves, while men wear shalwar kameez and sometimes a felt hat called a karakul.</p></div>
+ <div class="kandahar">
+     <h1> Kandahar </h1>
+            <img src="kandahar.jpg" height="200px" width="200px" alt="">
+            <img src="kandaharg.jpg" width="200px" height="200px" alt="">
+            <img src="kandaharriver.jpg" height="200px" width="200px"alt="">
+            <img src="kandahardress.jpg" height="200px" width="200px"alt="">
+            <img src="anaar.jpg" height="200px" width="200px"alt="">
+            <p> Kandahar is a major city in southern Afghanistan and the capital of Kandahar Province. It is historically significant as the birthplace of modern Afghanistan and the cultural center of the Pashtun people. The city is known for its strong tribal traditions and Pashtunwali code of honor.
+The people of Kandahar mainly speak Pashto and have rich traditions in music, poetry, and storytelling.
+ Kandahari cuisine is famous for Kandahari pulao (rice with lamb, carrots, and raisins), mantu (dumplings), and naan bread.
+Traditional dress for men includes the shalwar kameez with turbans or wool caps, while women wear colorful embroidered dresses with headscarves, 
+often more conservative in style</p>
+ </div>
+ <div class="Kunar">
+            <h1> Kunar </h1>
+            <img src="kunar.jpeg" height="200px" width="200px" alt="">
+            <img src="kunarg.jpeg" width="200px" height="200px" alt="">
+            <img src="Kunar1.jpeg" height="200px" width="200px"alt="">
+            <img src="Kunardress.jpg" height="200px" width="200px"alt="">
+            <img src="kunarf.jpg" height="200px" width="200px"alt="">
+            <p> Kunar province, in eastern Afghanistan along the border with Pakistan, is mountainous and home mainly to Pashtun tribes. 
+            The people are known for their strong tribal traditions and hospitality. 
+            Traditional Pashtun culture is reflected in their language, poetry, and music.
+            Food here often includes rice with lamb or chicken, flatbreads, and hearty stews made with local herbs.
+            Men commonly wear shalwar kameez with turbans or pakols (wool caps), while women wear long embroidered dresses and headscarves, often with bright color</p>
+            </div>
+
+<footer>
+    <a href="index.html"> Back to home!</a>
+</footer>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

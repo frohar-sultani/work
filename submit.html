@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit a City</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #F5F5DC;
+      margin: 0;
+      padding: 0;
+    }
+
+    .submit-section {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-family: 'Noto Serif', serif;
+      font-size: 28px;
+      color: #8B4513;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, textarea {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #DAA520;
+      box-shadow: 0 0 5px #DAA52099;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      align-self: flex-start;
+      background-color: #091e4c;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #A0522D;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="submit" class="submit-section">
+    <h2>Submit a City</h2>
+    <form action="submit_city.php" method="POST" enctype="multipart/form-data">
+  <label for="name">Your Name:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label for="city">City Name:</label><br>
+  <input type="text" id="city" name="city"><br><br>
+
+  <label for="photo">Upload Photo:</label><br>
+  <input type="file" id="photo" name="photo"><br><br>
+
+  <label for="story">Your Story:</label><br>
+  <textarea id="story" name="story" rows="4" cols="50"></textarea><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+  </section>
+
+</body>
+</html>
